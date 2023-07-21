@@ -1,0 +1,14 @@
+div {
+    border: 1px solid black;
+    padding: 1em;
+}
+
+#leftDiv {
+    width: 30%;
+    float: left;
+}
+
+#apiDiv {
+    width: 60%;
+    float: right;
+}
