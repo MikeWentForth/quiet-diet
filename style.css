@@ -1,17 +1,26 @@
 #bannerDiv {
 
-  border: 1px solid white;
-  margin-bottom: 20px;
+  border: 10px solid rgb(82, 94, 224);
+  margin-bottom: 5px;
   margin-top: 30px;
   margin-left: 20px;
   margin-right: 20px;
   padding: 75px;
-  background-color: rgb(65, 100, 229);
+  background-color: rgb(25, 23, 93);
   color: white;
   text-align: center;
+}
 
-
-
+h2 {
+  border: 10px solid rgb(82, 94, 224);
+  margin-bottom: 5px;
+  margin-top: 0px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 25px;
+  background-color: rgb(25, 23, 93);
+  color: white;
+  text-align: center;
 }
 
 #gridContainer {
@@ -132,12 +141,12 @@
 #allReady {
   height: 10rem;
   border-color: white;
-  background-color: rgb(234, 145, 21);
+  background-color: rgb(73, 157, 222);
   margin-right: 40px;
   margin-left: 40px;
-  margin-bottom: 40px;
-  padding: 60px;
-  padding-bottom: 30rem;
+  margin-bottom: 60px;
+  padding: 50px;
+  padding-bottom: 40px;
   color: white;
   text-align: center;
 
