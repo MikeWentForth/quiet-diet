@@ -1,19 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
   <meta charset="UTF-8">
-    <!--Metro UI To make page responsive to screen size -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <!-- Metro UI CSS styling framework -->
-    <link rel="stylesheet" href="https://cdn.korzh.com/metroui/v4/css/metro.min.css">
-    <link rel="stylesheet" href="https://cdn.korzh.com/metroui/v4/css/metro-colors.min.css">
-    <link rel="stylesheet" href="https://cdn.korzh.com/metroui/v4/css/metro-rtl.min.css">
-    <link rel="stylesheet" href="https://cdn.korzh.com/metroui/v4/css/metro-icons.min.css">
+  <!--Metro UI To make page responsive to screen size -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <!-- Metro UI CSS styling framework -->
+  <link rel="stylesheet" href="https://cdn.korzh.com/metroui/v4/css/metro.min.css">
+  <link rel="stylesheet" href="https://cdn.korzh.com/metroui/v4/css/metro-colors.min.css">
+  <link rel="stylesheet" href="https://cdn.korzh.com/metroui/v4/css/metro-rtl.min.css">
+  <link rel="stylesheet" href="https://cdn.korzh.com/metroui/v4/css/metro-icons.min.css">
   <title>Quiet Diet</title>
- 
+  <link rel="stylesheet" href="https://cdn.korzh.com/metroui/v4/css/metro-all.min.css">
+  <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
+
+
+
+  <div id="bannerDiv">
+    <h1>Quiet Diet:</h1>
+    <hr>
+  </div>c
+  
+
+  <div id="lookingFor">
+    <h2>Looking for a food? Fill in the info below and generate a recipe!</h2>
+  </div>
+
+  <div class= "row" id="recipeDivContainer">
+    <div class="cell" id="recipeDiv1">
+      <div class="row recipeDivContainer">
+        <div class="cell recipeDiv">
+          <h3>Cuisine</h3><hr>
+
+
+
+          <!--<select id="cuisine" multiple>--> <!-- Allows multiple selections -->
+          <!--<select id="cuisine" multiple size="4">--> <!-- Allows multiple selections AND shows 4 at a time -->
+          <!--<select id="cuisine" size="4">--> <!-- Shows four at a time -->
+          <!--
+            Create as radio buttons, but style in CSS to appear as checkbox.
+          -->
+
+            <label><input type="radio" name="cuisine" value="chinese" class="asCheckbox"> Chinese</label><br>
+            <label><input type="radio" name="cuisine" value="chinese" class="asCheckbox"> British</label><br>
+            <label><input type="radio" name="cuisine" value="chinese" class="asCheckbox"> Mediterranean</label><br>
+            <label><input type="radio" name="cuisine" value="chinese" class="asCheckbox"> Korean</label><br>
+            <label><input type="radio" name="cuisine" value="chinese" class="asCheckbox"> Mexican</label><br>
+            <label><input type="radio" name="cuisine" value="chinese" class="asCheckbox"> Greek</label><br>
+            <label><input type="radio" name="cuisine" value="chinese" class="asCheckbox"> Indian</label><br>
+            <label><input type="radio" name="cuisine" value="chinese" class="asCheckbox"> American</label><br>
+            <label><input type="radio" name="cuisine" value="chinese" class="asCheckbox"> Carribean</label><br>
+            <label><input type="radio" name="cuisine" value="chinese" class="asCheckbox"> Japanese</label><br>
+            <label><input type="radio" name="cuisine" value="chinese" class="asCheckbox"> Vietnemese</label><br>
+            <label><input type="radio" name="cuisine" value="chinese" class="asCheckbox"> Spanish</label><br>
+            <label><input type="radio" name="cuisine" value="chinese" class="asCheckbox"> Southern</label><br>
+            <label><input type="radio" name="cuisine" value="chinese" class="asCheckbox"> German</label><br>
+            <label><input type="radio" name="cuisine" value="chinese" class="asCheckbox"> French</label><br>
+            <label><input type="radio" name="cuisine" value="chinese" class="asCheckbox"> Italian</label><br>
+            <label><input type="radio" name="cuisine" value="chinese" class="asCheckbox"> Thai</label><br> 
+
+        </div>
+        <div class="cell recipeDiv" id="recipeDiv2">
+          <h3>Allergies</h3><hr>
+          <label><input type="checkbox" name="allergies" value="dairy"> Dairy</label><br>
+          <label><input type="checkbox" name="allergies" value="egg"> Egg</label><br>
+          <label><input type="checkbox" name="allergies" value="gluten"> Gluten</label><br>
+          <label><input type="checkbox" name="allergies" value="grain"> Grain</label><br>
+          <label><input type="checkbox" name="allergies" value="peanut"> Peanut</label><br>
+          <label><input type="checkbox" name="allergies" value="seafood"> Seafood</label><br>
+          <label><input type="checkbox" name="allergies" value="sesame"> Sesame</label><br>
+          <label><input type="checkbox" name="allergies" value="shellfish"> Shellfish</label><br>
+          <label><input type="checkbox" name="allergies" value="soy"> Soy</label><br>
+          <label><input type="checkbox" name="allergies" value="sulfite"> Sulfite</label><br>
+          <label><input type="checkbox" name="allergies" value="treeNuts"> Tree Nuts</label><br>
+          <label><input type="checkbox" name="allergies" value="wheat"> Wheat</label><br>
+          <input type="checkbox" data-role="checkbox" data-caption="Jean">
+
+          
+
+        </div>
+        <div class="cell recipeDiv" id="recipeDiv3">
+          <h3>Type</h3><hr>
+          <label><input type="radio" name="recipeType" value="main" class="asCheckbox"> Main Course</label><br>
+          <label><input type="radio" name="recipeType" value="side" class="asCheckbox"> Side Dish</label><br>
+          <label><input type="radio" name="recipeType" value="breakfast" class="asCheckbox"> Breakfast</label><br>
+          <label><input type="radio" name="recipeType" value="snack" class="asCheckbox"> Snack</label><br>
+          <label><input type="radio" name="recipeType" value="dessert" class="asCheckbox"> Dessert</label><br>
+          <label><input type="radio" name="recipeType" value="appetizer" class="asCheckbox"> Appetizer</label><br>
+          <label><input type="radio" name="recipeType" value="salad" class="asCheckbox"> Salad</label><br>
+          <label><input type="radio" name="recipeType" value="soup" class="asCheckbox"> Soup</label><br>
+
+        
+        </div>
+        <div class="cell recipeDiv" id="recipeDiv4">
+          <h3>Diet</h3><hr>
+          <label><input type="radio" name="diet" value="glutenFree" class="asCheckbox"> Gluten Free</label><br>
+          <label><input type="radio" name="diet" value="ketogenic" class="asCheckbox"> Ketogenic</label><br>
+          <label><input type="radio" name="diet" value="vegetarian" class="asCheckbox"> Vegetarian</label><br>
+          <label><input type="radio" name="diet" value="lactoVegetarian" class="asCheckbox"> Lacto-Vegetarian</label><br>
+          <label><input type="radio" name="diet" value="pescatarian" class="asCheckbox"> Pescatarian</label><br>
+          <label><input type="radio" name="diet" value="paleo" class="asCheckbox"> Paleo</label><br>
+          <label><input type="radio" name="diet" value="primal" class="asCheckbox"> Primal</label><br>
+          <label><input type="radio" name="diet" value="ovoVegetarian" class="asCheckbox"> Ovo-Vegetarian</label><br>
+          <label><input type="radio" name="diet" value="vegan" class="asCheckbox"> Vegan</label><br> 
+
+        </div>
+
+      </div>
+      
+    </div>
+  </div>
+
+  <div id="allReady">
+    <h2>All ready? Hit the button below to begin the randomizer!</h2>
+   <button onclick="recipeSearch()" id="searchButton">Search</button>
+  </div>
+
+ 
   <!-- Metro UI Javascript framework -->
   <script src="https://cdn.korzh.com/metroui/v4/js/metro.min.js"></script>
+
 </body>
+
 </html>

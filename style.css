@@ -1,0 +1,171 @@
+#bannerDiv {
+
+  border: 1px solid white;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 75px;
+  background-color: rgb(65, 100, 229);
+  color: white;
+  text-align: center;
+
+
+
+}
+
+#gridContainer {
+
+  display: grid;
+  grid-template-columns: 200px auto;
+  padding: 10px;
+
+
+
+}
+
+.gridItem {
+
+  margin-left: 15px;
+  margin-right: 40px;
+
+
+}
+
+#recipeInput {
+
+  padding: 5px;
+  width: 94%;
+  box-shadow: .5px .5px .5px;
+
+}
+
+#searchButton {
+
+  background-color: rgb(65, 100, 229);
+  color: white;
+  box-shadow: 1px 1px 1px;
+  margin-bottom: 5px;
+  padding: 3px;
+
+}
+
+#previousRecipesDiv {}
+
+.gridItem2 {
+
+
+  padding-left: 20px;
+}
+
+#apiDiv {
+
+  width: 100%;
+
+  background-color: rgb(10, 200, 200);
+  color: white;
+
+
+}
+
+#recipeDivContainer {
+
+  display: grid;
+  padding-left: 80px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  grid-template-columns: auto auto auto auto auto;
+
+
+
+}
+
+.recipeDiv {
+
+  margin: 40px;
+  padding: 10px;
+  border-color: white;
+  background-color: rgb(65, 100, 229);
+
+  color: white;
+  align-items: center;
+}
+
+#recipeDiv1 {
+
+
+  /*text-align: center;*/
+
+}
+
+#recipeDiv2 {
+
+
+  /* text-align: center; */
+}
+
+#recipeDiv3 {
+
+
+  /* text-align: center; */
+}
+
+#recipeDiv4 {
+
+
+  /* text-align: center; */
+}
+
+#lookingFor {
+
+
+  height: 10rem;
+  border-color: white;
+  background-color: rgb(155, 173, 241);
+  margin-right: 40px;
+  margin-left: 40px;
+  padding: 50px;
+  color: white;
+  text-align: center;
+}
+
+#allReady {
+  height: 10rem;
+  border-color: white;
+  background-color: rgb(234, 145, 21);
+  margin-right: 40px;
+  margin-left: 40px;
+  margin-bottom: 40px;
+  padding: 60px;
+  padding-bottom: 30rem;
+  color: white;
+  text-align: center;
+
+}
+
+
+#searchButton {
+
+  background-color: rgb(65, 100, 229);
+  color: white;
+  margin-bottom: 5px;
+  padding: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  font-size: larger;
+  align-items: center;
+}
+
+.asCheckbox {
+
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1em;
+  height: 1em;
+  border: 0.15em solid currentColor;
+
+  /* Need to add CSS to indicate checked/selected radio button XXXXXX */
+}

@@ -13,3 +13,19 @@
 // } catch (error) {
 //     console.error(error);
 // }
+
+
+function search() {
+// When search button is clicked...
+// collect information about which items are clicked and their values for passing to
+// your first API.
+
+// For radiobuttons, determine which item in the group is checked and it value.
+
+// For checkboxes, iterate through all of them and collect the values for all checked ones.
+
+
+// Once you get the response from the first API, pass its information to the 2nd API
+// to get the wine recommendation.
+
+}
