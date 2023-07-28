@@ -33,8 +33,6 @@
         <div class="cell recipeDiv">
           <h3>Cuisine</h3><hr>
 
-
-
           <!--<select id="cuisine" multiple>--> <!-- Allows multiple selections -->
           <!--<select id="cuisine" multiple size="4">--> <!-- Allows multiple selections AND shows 4 at a time -->
           <!--<select id="cuisine" size="4">--> <!-- Shows four at a time -->
@@ -62,7 +60,7 @@
         </div>
 
         <div class="cell recipeDiv" id="recipeDiv2">
-          <h3>Allergies</h3><hr>
+          <h3>Allergies and Intolerances</h3><hr>
           <label><input type="checkbox" name="allergies" value="dairy"> Dairy</label><br>
           <label><input type="checkbox" name="allergies" value="egg"> Egg</label><br>
           <label><input type="checkbox" name="allergies" value="gluten"> Gluten</label><br>
@@ -79,13 +77,13 @@
 
         <div class="cell recipeDiv" id="recipeDiv3">
           <h3>Type</h3><hr>
+          <label><input type="radio" name="recipeType" value="appetizer" class="asCheckbox"> Appetizer</label><br>
+          <label><input type="radio" name="recipeType" value="breakfast" class="asCheckbox"> Breakfast</label><br>
+          <label><input type="radio" name="recipeType" value="dessert" class="asCheckbox"> Dessert</label><br>
           <label><input type="radio" name="recipeType" value="main" class="asCheckbox"> Main Course</label><br>
           <label><input type="radio" name="recipeType" value="side" class="asCheckbox"> Side Dish</label><br>
-          <label><input type="radio" name="recipeType" value="breakfast" class="asCheckbox"> Breakfast</label><br>
-          <label><input type="radio" name="recipeType" value="snack" class="asCheckbox"> Snack</label><br>
-          <label><input type="radio" name="recipeType" value="dessert" class="asCheckbox"> Dessert</label><br>
-          <label><input type="radio" name="recipeType" value="appetizer" class="asCheckbox"> Appetizer</label><br>
           <label><input type="radio" name="recipeType" value="salad" class="asCheckbox"> Salad</label><br>
+          <label><input type="radio" name="recipeType" value="snack" class="asCheckbox"> Snack</label><br>
           <label><input type="radio" name="recipeType" value="soup" class="asCheckbox"> Soup</label><br>
         </div>
 
@@ -93,14 +91,13 @@
           <h3>Diet</h3><hr>
           <label><input type="radio" name="diet" value="glutenFree" class="asCheckbox"> Gluten Free</label><br>
           <label><input type="radio" name="diet" value="ketogenic" class="asCheckbox"> Ketogenic</label><br>
-          <label><input type="radio" name="diet" value="vegetarian" class="asCheckbox"> Vegetarian</label><br>
           <label><input type="radio" name="diet" value="lactoVegetarian" class="asCheckbox"> Lacto-Vegetarian</label><br>
-          <label><input type="radio" name="diet" value="pescatarian" class="asCheckbox"> Pescatarian</label><br>
-          <label><input type="radio" name="diet" value="paleo" class="asCheckbox"> Paleo</label><br>
-          <label><input type="radio" name="diet" value="primal" class="asCheckbox"> Primal</label><br>
           <label><input type="radio" name="diet" value="ovoVegetarian" class="asCheckbox"> Ovo-Vegetarian</label><br>
+          <label><input type="radio" name="diet" value="paleo" class="asCheckbox"> Paleo</label><br>
+          <label><input type="radio" name="diet" value="pescatarian" class="asCheckbox"> Pescatarian</label><br>
+          <label><input type="radio" name="diet" value="primal" class="asCheckbox"> Primal</label><br>
           <label><input type="radio" name="diet" value="vegan" class="asCheckbox"> Vegan</label><br> 
-
+          <label><input type="radio" name="diet" value="vegetarian" class="asCheckbox"> Vegetarian</label><br>
         </div>
 
       </div>
@@ -109,11 +106,10 @@
   </div>
 
   <div id="allReady">
-    <h2>All ready? Hit the button below to begin the randomizer!</h2>
+    <h2>All ready? Hit the button below to generate four recipe options that match your cravings!</h2>
    <button onclick="recipeSearch()" id="searchButton">Search</button>
   </div>
 
- 
   <!-- Metro UI Javascript framework -->
   <script src="https://cdn.korzh.com/metroui/v4/js/metro.min.js"></script>
 
