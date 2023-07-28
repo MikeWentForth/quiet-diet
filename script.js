@@ -13,9 +13,10 @@
 // } catch (error) {
 //     console.error(error);
 // }
+const APIKey = "bcf5a3233da6487aa683f2eee54ffaa4";
 
 
-function search() {
+function searchRecipe() {
 // When search button is clicked...
 // collect information about which items are clicked and their values for passing to
 // your first API.
@@ -27,5 +28,4 @@ function search() {
 
 // Once you get the response from the first API, pass its information to the 2nd API
 // to get the wine recommendation.
-
 }
