@@ -19,12 +19,12 @@
 
 <body>
   <div id="bannerDiv">
-    <h1><b>Hungry</b><br>and indecisive</h1>
+    <h1><b>Hungry</b><br>and indecisive?</h1>
     <hr>
   </div>
   
   <div id="lookingFor">
-    <h2>Hungry, but unsure what you want? Narrow down your choices below and generate some recipe options!</h2>
+    <h2>Narrow down your choices below!</h2>
   </div>
 
   <div class= "row" id="recipeDivContainer">
@@ -60,7 +60,7 @@
         </div>
 
         <div class="cell recipeDiv" id="recipeDiv2">
-          <h3>Allergies and Intolerances</h3><hr>
+          <h3>Allergies</h3><hr>
           <label><input type="checkbox" name="allergies" value="dairy"> Dairy</label><br>
           <label><input type="checkbox" name="allergies" value="egg"> Egg</label><br>
           <label><input type="checkbox" name="allergies" value="gluten"> Gluten</label><br>
@@ -106,10 +106,8 @@
   </div>
 
   <div id="allReady">
-  
     <h2>All ready? Hit the button below to get four recipe options that match your cravings!</h2>
-   <button onclick="recipeSearch()" id="searchButton">Get recipes</button>
-
+   <a href="results.html"> <button onclick="recipeSearch()" id="searchButton">Get recipes</button> </a>   
   </div>
 
   <!-- Metro UI Javascript framework -->
