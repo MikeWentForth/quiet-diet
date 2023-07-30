@@ -73,7 +73,7 @@ getRecipes();
 
 // Mike: im guessing after click search on page one we would wanna be directed to page two -oscar
 function Redirect() {
-    //window.location.assign("./results.html") *this one automatically redirects to page without having to press the searchButton
+    //window.location.assign("./results.html") <--*this one automatically redirects to page without having to press the searchButton so its a no go but ill leave it there 
     document.getElementById("searchButton").onclick = function () {
         location.href = "./results.html";
     };
@@ -81,5 +81,11 @@ function Redirect() {
 
 Redirect();
 
-// this should change us to the 2nd page if not we gotta tweak the url
+//2nd API nutrientninja
+// key = lhYNdB5J4lLMfKvYfIWWkGCM5iBc1BBoLS5acv3u
 
+const APInutkey = lhYNdB5J4lLMfKvYfIWWkGCM5iBc1BBoLS5acv3u
+
+var nutquery = localStorage.getItem() //<---here we wanna grab data thats saved result on local so the 2nd api can read it not sure if we have to leave it as a string 
+
+const urlNut = "https://api.calorieninjas.com/v1/nutrition?query=" + nutquery
