@@ -70,3 +70,16 @@ function getRecipes() {
 }
 
 getRecipes();
+
+// Mike: im guessing after click search on page one we would wanna be directed to page two -oscar
+function Redirect() {
+    //window.location.assign("./results.html") *this one automatically redirects to page without having to press the searchButton
+    document.getElementById("searchButton").onclick = function () {
+        location.href = "./results.html";
+    };
+}
+
+Redirect();
+
+// this should change us to the 2nd page if not we gotta tweak the url
+
