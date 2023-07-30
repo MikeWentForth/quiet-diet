@@ -57,7 +57,9 @@ h2 {
 
 }
 
-#previousRecipesDiv {}
+#previousRecipesDiv {
+  
+}
 
 .gridItem2 {
 
@@ -182,7 +184,7 @@ h2 {
   grid-template-columns: auto;
   padding: 0px;}
 
-@media (min-width: 576px) {
+/* @media (min-width: 576px) {
     .container {
         max-width: 50%;
     }
@@ -210,7 +212,8 @@ h2 {
     .container {
         max-width: 25%;
     }
-}
+} */
+
 .container{
   align-content: space-around;
 }
