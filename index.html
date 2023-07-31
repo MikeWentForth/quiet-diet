@@ -9,7 +9,7 @@
   <!-- Metro UI CSS styling framework -->
   <link rel="stylesheet" href="https://cdn.korzh.com/metroui/v4/css/metro.min.css">
   <link rel="stylesheet" href="https://cdn.korzh.com/metroui/v4/css/metro-colors.min.css">
-  <link rel="stylesheet" href="https://cdn.korzh.com/metroui/v4/css/metro-rtl.min.css">
+  <!-- metro is responding with 404 for this: <link rel="stylesheet" href="https://cdn.korzh.com/metroui/v4/css/metro-rtl.min.css"> -->
   <link rel="stylesheet" href="https://cdn.korzh.com/metroui/v4/css/metro-icons.min.css">
   <title>Quiet Diet</title>
   <link rel="stylesheet" href="https://cdn.korzh.com/metroui/v4/css/metro-all.min.css">
@@ -28,8 +28,11 @@
   </div>
 
   <div class="row" id="recipeDivContainer">
-    <div class="cell" id="recipeDiv1">
+    <!--
+      <div class="cell" id="recipeDiv1">
       <div class="row recipeDivContainer">
+      -->
+
         <div class="cell recipeDiv">
           <h3>Cuisine</h3>
           <hr>
@@ -63,18 +66,18 @@
         <div class="cell recipeDiv" id="recipeDiv2">
           <h3>Allergies and Intolerances</h3>
           <hr>
-          <label><input type="checkbox" name="allergies" value="dairy"> Dairy</label><br>
-          <label><input type="checkbox" name="allergies" value="egg"> Egg</label><br>
-          <label><input type="checkbox" name="allergies" value="gluten"> Gluten</label><br>
-          <label><input type="checkbox" name="allergies" value="grain"> Grain</label><br>
-          <label><input type="checkbox" name="allergies" value="peanut"> Peanut</label><br>
-          <label><input type="checkbox" name="allergies" value="seafood"> Seafood</label><br>
-          <label><input type="checkbox" name="allergies" value="sesame"> Sesame</label><br>
-          <label><input type="checkbox" name="allergies" value="shellfish"> Shellfish</label><br>
-          <label><input type="checkbox" name="allergies" value="soy"> Soy</label><br>
-          <label><input type="checkbox" name="allergies" value="sulfite"> Sulfite</label><br>
-          <label><input type="checkbox" name="allergies" value="treeNuts"> Tree Nuts</label><br>
-          <label><input type="checkbox" name="allergies" value="wheat"> Wheat</label><br>
+          <label><input type="checkbox" name="allergies" class="allergyCheckbox" value="dairy"> Dairy</label><br>
+          <label><input type="checkbox" name="allergies" class="allergyCheckbox" value="egg"> Egg</label><br>
+          <label><input type="checkbox" name="allergies" class="allergyCheckbox" value="gluten"> Gluten</label><br>
+          <label><input type="checkbox" name="allergies" class="allergyCheckbox" value="grain"> Grain</label><br>
+          <label><input type="checkbox" name="allergies" class="allergyCheckbox" value="peanut"> Peanut</label><br>
+          <label><input type="checkbox" name="allergies" class="allergyCheckbox" value="seafood"> Seafood</label><br>
+          <label><input type="checkbox" name="allergies" class="allergyCheckbox" value="sesame"> Sesame</label><br>
+          <label><input type="checkbox" name="allergies" class="allergyCheckbox" value="shellfish"> Shellfish</label><br>
+          <label><input type="checkbox" name="allergies" class="allergyCheckbox" value="soy"> Soy</label><br>
+          <label><input type="checkbox" name="allergies" class="allergyCheckbox" value="sulfite"> Sulfite</label><br>
+          <label><input type="checkbox" name="allergies" class="allergyCheckbox" value="treeNut"> Tree Nuts</label><br>
+          <label><input type="checkbox" name="allergies" class="allergyCheckbox" value="wheat"> Wheat</label><br>
         </div>
 
         <div class="cell recipeDiv" id="recipeDiv3">
@@ -83,11 +86,12 @@
           <label><input type="radio" name="recipeType" value="appetizer" class="asCheckbox"> Appetizer</label><br>
           <label><input type="radio" name="recipeType" value="breakfast" class="asCheckbox"> Breakfast</label><br>
           <label><input type="radio" name="recipeType" value="dessert" class="asCheckbox"> Dessert</label><br>
-          <label><input type="radio" name="recipeType" value="main" class="asCheckbox"> Main Course</label><br>
-          <label><input type="radio" name="recipeType" value="side" class="asCheckbox"> Side Dish</label><br>
+          <label><input type="radio" name="recipeType" value="main course" class="asCheckbox"> Main Course</label><br>
+          <label><input type="radio" name="recipeType" value="side dish" class="asCheckbox"> Side Dish</label><br>
           <label><input type="radio" name="recipeType" value="salad" class="asCheckbox"> Salad</label><br>
           <label><input type="radio" name="recipeType" value="snack" class="asCheckbox"> Snack</label><br>
           <label><input type="radio" name="recipeType" value="soup" class="asCheckbox"> Soup</label><br>
+          <label><input type="radio" name="recipeType" value="beverage" class="asCheckbox"> Beverage</label><br>
         </div>
 
         <div class="cell recipeDiv" id="recipeDiv4">
@@ -105,16 +109,20 @@
           <label><input type="radio" name="diet" value="vegetarian" class="asCheckbox"> Vegetarian</label><br>
         </div>
 
+      <!--
       </div>
 
     </div>
+  -->
   </div>
 
   <div id="allReady">
-
     <h2>All ready? Hit the button below to get four recipe options that match your cravings!</h2>
     <button onclick="recipeSearch()" id="searchButton">Get recipes</button>
+  </div>
 
+  <div id="startOver">
+    <button onclick="reset()">Start Over</button>
   </div>
 
   <!-- Metro UI Javascript framework -->
