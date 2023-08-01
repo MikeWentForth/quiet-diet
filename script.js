@@ -1,14 +1,7 @@
 
 const APIKey = "8bf6de1b7d2c49209ba591a0f4824563";
 
-const url = 'https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/complexSearch?query=sandwich&cuisine=chinese&intolerances=lactose&includeIngredients=tomato%2Ccheese&fillIngredients=false&addRecipeInformation=false';
-const APIKey = "0bc38f2652msh77a6f89cc849ed5p1e21afjsn855a2eae996d";
-var recipeArr;[""]; //holds the value of the checkboxes//
-const mainDiv = document.getElementById("asCheckbox");
-var allergiesArr = ['dairy', 'egg', 'gluten', 'grain', 'peanut', 'seafood', 'sesame', 'shellfish', 'soy', 'sulfite', 'tree nuts', 'wheat'];
-var dietArr = ['gluten free', 'ketogenic', 'vegetarian', 'lactose intolerent', 'pescatarian', 'paleo', 'primal', 'ovo-vegetarian', 'vegan'];
-
-function searchRecipe() {
+function recipeSearch() {
     // When search button is clicked...
     // collect information about which items are clicked and their values for passing to
     // your first API.
@@ -206,4 +199,13 @@ function getRecipeDetail(recipeID) {
 
 }
 
-getRecipes();
+
+
+
+
+
+
+
+
+
+
