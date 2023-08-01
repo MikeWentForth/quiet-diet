@@ -28,92 +28,80 @@
   </div>
 
   <div class="row" id="recipeDivContainer">
-    <!--
-      <div class="cell" id="recipeDiv1">
-      <div class="row recipeDivContainer">
-      -->
 
-        <div class="cell recipeDiv">
-          <h3>Cuisine</h3>
-          <hr>
 
-          <!--<select id="cuisine" multiple>--> <!-- Allows multiple selections -->
-          <!--<select id="cuisine" multiple size="4">--> <!-- Allows multiple selections AND shows 4 at a time -->
-          <!--<select id="cuisine" size="4">--> <!-- Shows four at a time -->
-          <!--
-            Create as radio buttons, but style in CSS to appear as checkbox.
-          -->
+    <div class="cell recipeDiv">
+      <h3>Cuisine</h3>
+      <hr>
 
-          <label><input type="radio" name="cuisine" value="american" class="asCheckbox"> American</label><br>
-          <label><input type="radio" name="cuisine" value="british" class="asCheckbox"> British</label><br>
-          <label><input type="radio" name="cuisine" value="carribean" class="asCheckbox"> Carribean</label><br>
-          <label><input type="radio" name="cuisine" value="chinese" class="asCheckbox"> Chinese</label><br>
-          <label><input type="radio" name="cuisine" value="french" class="asCheckbox"> French</label><br>
-          <label><input type="radio" name="cuisine" value="german" class="asCheckbox"> German</label><br>
-          <label><input type="radio" name="cuisine" value="greek" class="asCheckbox"> Greek</label><br>
-          <label><input type="radio" name="cuisine" value="indian" class="asCheckbox"> Indian</label><br>
-          <label><input type="radio" name="cuisine" value="italian" class="asCheckbox"> Italian</label><br>
-          <label><input type="radio" name="cuisine" value="japanese" class="asCheckbox"> Japanese</label><br>
-          <label><input type="radio" name="cuisine" value="korean" class="asCheckbox"> Korean</label><br>
-          <label><input type="radio" name="cuisine" value="mediterranean" class="asCheckbox"> Mediterranean</label><br>
-          <label><input type="radio" name="cuisine" value="mexican" class="asCheckbox"> Mexican</label><br>
-          <label><input type="radio" name="cuisine" value="southern" class="asCheckbox"> Southern</label><br>
-          <label><input type="radio" name="cuisine" value="spanish" class="asCheckbox"> Spanish</label><br>
-          <label><input type="radio" name="cuisine" value="thai" class="asCheckbox"> Thai</label><br>
-          <label><input type="radio" name="cuisine" value="vietnamese" class="asCheckbox"> Vietnamese</label><br>
-        </div>
 
-        <div class="cell recipeDiv" id="recipeDiv2">
-          <h3>Allergies and Intolerances</h3>
-          <hr>
-          <label><input type="checkbox" name="allergies" class="allergyCheckbox" value="dairy"> Dairy</label><br>
-          <label><input type="checkbox" name="allergies" class="allergyCheckbox" value="egg"> Egg</label><br>
-          <label><input type="checkbox" name="allergies" class="allergyCheckbox" value="gluten"> Gluten</label><br>
-          <label><input type="checkbox" name="allergies" class="allergyCheckbox" value="grain"> Grain</label><br>
-          <label><input type="checkbox" name="allergies" class="allergyCheckbox" value="peanut"> Peanut</label><br>
-          <label><input type="checkbox" name="allergies" class="allergyCheckbox" value="seafood"> Seafood</label><br>
-          <label><input type="checkbox" name="allergies" class="allergyCheckbox" value="sesame"> Sesame</label><br>
-          <label><input type="checkbox" name="allergies" class="allergyCheckbox" value="shellfish"> Shellfish</label><br>
-          <label><input type="checkbox" name="allergies" class="allergyCheckbox" value="soy"> Soy</label><br>
-          <label><input type="checkbox" name="allergies" class="allergyCheckbox" value="sulfite"> Sulfite</label><br>
-          <label><input type="checkbox" name="allergies" class="allergyCheckbox" value="treeNut"> Tree Nuts</label><br>
-          <label><input type="checkbox" name="allergies" class="allergyCheckbox" value="wheat"> Wheat</label><br>
-        </div>
 
-        <div class="cell recipeDiv" id="recipeDiv3">
-          <h3>Type</h3>
-          <hr>
-          <label><input type="radio" name="recipeType" value="appetizer" class="asCheckbox"> Appetizer</label><br>
-          <label><input type="radio" name="recipeType" value="breakfast" class="asCheckbox"> Breakfast</label><br>
-          <label><input type="radio" name="recipeType" value="dessert" class="asCheckbox"> Dessert</label><br>
-          <label><input type="radio" name="recipeType" value="main course" class="asCheckbox"> Main Course</label><br>
-          <label><input type="radio" name="recipeType" value="side dish" class="asCheckbox"> Side Dish</label><br>
-          <label><input type="radio" name="recipeType" value="salad" class="asCheckbox"> Salad</label><br>
-          <label><input type="radio" name="recipeType" value="snack" class="asCheckbox"> Snack</label><br>
-          <label><input type="radio" name="recipeType" value="soup" class="asCheckbox"> Soup</label><br>
-          <label><input type="radio" name="recipeType" value="beverage" class="asCheckbox"> Beverage</label><br>
-        </div>
-
-        <div class="cell recipeDiv" id="recipeDiv4">
-          <h3>Diet</h3>
-          <hr>
-          <label><input type="radio" name="diet" value="glutenFree" class="asCheckbox"> Gluten Free</label><br>
-          <label><input type="radio" name="diet" value="ketogenic" class="asCheckbox"> Ketogenic</label><br>
-          <label><input type="radio" name="diet" value="lactoVegetarian" class="asCheckbox">
-            Lacto-Vegetarian</label><br>
-          <label><input type="radio" name="diet" value="ovoVegetarian" class="asCheckbox"> Ovo-Vegetarian</label><br>
-          <label><input type="radio" name="diet" value="paleo" class="asCheckbox"> Paleo</label><br>
-          <label><input type="radio" name="diet" value="pescatarian" class="asCheckbox"> Pescatarian</label><br>
-          <label><input type="radio" name="diet" value="primal" class="asCheckbox"> Primal</label><br>
-          <label><input type="radio" name="diet" value="vegan" class="asCheckbox"> Vegan</label><br>
-          <label><input type="radio" name="diet" value="vegetarian" class="asCheckbox"> Vegetarian</label><br>
-        </div>
-
-      <!--
-      </div>
-
+      <label><input type="radio" name="cuisine" value="american" class="asCheckbox"> American</label><br>
+      <label><input type="radio" name="cuisine" value="british" class="asCheckbox"> British</label><br>
+      <label><input type="radio" name="cuisine" value="carribean" class="asCheckbox"> Carribean</label><br>
+      <label><input type="radio" name="cuisine" value="chinese" class="asCheckbox"> Chinese</label><br>
+      <label><input type="radio" name="cuisine" value="french" class="asCheckbox"> French</label><br>
+      <label><input type="radio" name="cuisine" value="german" class="asCheckbox"> German</label><br>
+      <label><input type="radio" name="cuisine" value="greek" class="asCheckbox"> Greek</label><br>
+      <label><input type="radio" name="cuisine" value="indian" class="asCheckbox"> Indian</label><br>
+      <label><input type="radio" name="cuisine" value="italian" class="asCheckbox"> Italian</label><br>
+      <label><input type="radio" name="cuisine" value="japanese" class="asCheckbox"> Japanese</label><br>
+      <label><input type="radio" name="cuisine" value="korean" class="asCheckbox"> Korean</label><br>
+      <label><input type="radio" name="cuisine" value="mediterranean" class="asCheckbox"> Mediterranean</label><br>
+      <label><input type="radio" name="cuisine" value="mexican" class="asCheckbox"> Mexican</label><br>
+      <label><input type="radio" name="cuisine" value="southern" class="asCheckbox"> Southern</label><br>
+      <label><input type="radio" name="cuisine" value="spanish" class="asCheckbox"> Spanish</label><br>
+      <label><input type="radio" name="cuisine" value="thai" class="asCheckbox"> Thai</label><br>
+      <label><input type="radio" name="cuisine" value="vietnamese" class="asCheckbox"> Vietnamese</label><br>
     </div>
-  -->
+
+    <div class="cell recipeDiv" id="recipeDiv2">
+      <h3>Allergies and Intolerances</h3>
+      <hr>
+      <label><input type="checkbox" name="allergies" class="allergyCheckbox" value="dairy"> Dairy</label><br>
+      <label><input type="checkbox" name="allergies" class="allergyCheckbox" value="egg"> Egg</label><br>
+      <label><input type="checkbox" name="allergies" class="allergyCheckbox" value="gluten"> Gluten</label><br>
+      <label><input type="checkbox" name="allergies" class="allergyCheckbox" value="grain"> Grain</label><br>
+      <label><input type="checkbox" name="allergies" class="allergyCheckbox" value="peanut"> Peanut</label><br>
+      <label><input type="checkbox" name="allergies" class="allergyCheckbox" value="seafood"> Seafood</label><br>
+      <label><input type="checkbox" name="allergies" class="allergyCheckbox" value="sesame"> Sesame</label><br>
+      <label><input type="checkbox" name="allergies" class="allergyCheckbox" value="shellfish"> Shellfish</label><br>
+      <label><input type="checkbox" name="allergies" class="allergyCheckbox" value="soy"> Soy</label><br>
+      <label><input type="checkbox" name="allergies" class="allergyCheckbox" value="sulfite"> Sulfite</label><br>
+      <label><input type="checkbox" name="allergies" class="allergyCheckbox" value="treeNut"> Tree Nuts</label><br>
+      <label><input type="checkbox" name="allergies" class="allergyCheckbox" value="wheat"> Wheat</label><br>
+    </div>
+
+    <div class="cell recipeDiv" id="recipeDiv3">
+      <h3>Type</h3>
+      <hr>
+      <label><input type="radio" name="recipeType" value="appetizer" class="asCheckbox"> Appetizer</label><br>
+      <label><input type="radio" name="recipeType" value="breakfast" class="asCheckbox"> Breakfast</label><br>
+      <label><input type="radio" name="recipeType" value="dessert" class="asCheckbox"> Dessert</label><br>
+      <label><input type="radio" name="recipeType" value="main course" class="asCheckbox"> Main Course</label><br>
+      <label><input type="radio" name="recipeType" value="side dish" class="asCheckbox"> Side Dish</label><br>
+      <label><input type="radio" name="recipeType" value="salad" class="asCheckbox"> Salad</label><br>
+      <label><input type="radio" name="recipeType" value="snack" class="asCheckbox"> Snack</label><br>
+      <label><input type="radio" name="recipeType" value="soup" class="asCheckbox"> Soup</label><br>
+      <label><input type="radio" name="recipeType" value="beverage" class="asCheckbox"> Beverage</label><br>
+    </div>
+
+    <div class="cell recipeDiv" id="recipeDiv4">
+      <h3>Diet</h3>
+      <hr>
+      <label><input type="radio" name="diet" value="glutenFree" class="asCheckbox"> Gluten Free</label><br>
+      <label><input type="radio" name="diet" value="ketogenic" class="asCheckbox"> Ketogenic</label><br>
+      <label><input type="radio" name="diet" value="lactoVegetarian" class="asCheckbox">
+        Lacto-Vegetarian</label><br>
+      <label><input type="radio" name="diet" value="ovoVegetarian" class="asCheckbox"> Ovo-Vegetarian</label><br>
+      <label><input type="radio" name="diet" value="paleo" class="asCheckbox"> Paleo</label><br>
+      <label><input type="radio" name="diet" value="pescatarian" class="asCheckbox"> Pescatarian</label><br>
+      <label><input type="radio" name="diet" value="primal" class="asCheckbox"> Primal</label><br>
+      <label><input type="radio" name="diet" value="vegan" class="asCheckbox"> Vegan</label><br>
+      <label><input type="radio" name="diet" value="vegetarian" class="asCheckbox"> Vegetarian</label><br>
+    </div>
+
+
   </div>
 
   <div id="allReady">

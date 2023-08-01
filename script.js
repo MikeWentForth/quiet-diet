@@ -1,14 +1,4 @@
 
-
-// // Mike: im guessing after click search on page one we would wanna be directed to page two -oscar
-// function Redirect() {
-//     //window.location.assign("./results.html") <--*this one automatically redirects to page without having to press the searchButton so its a no go but ill leave it there 
-//     document.getElementById("searchButton").onclick = function () {
-//         location.href = "./results.html";
-//     };
-// }
-
-
 const APIKey = "8bf6de1b7d2c49209ba591a0f4824563";
 
 function recipeSearch() {
@@ -56,9 +46,9 @@ function recipeSearch() {
         }
     }
 
-    // If any of the radio selections are still null, alert the user and do no proceed.
-    if (dietSelected == null || recipeTypeSelected == null || cuisineSelected == null) {
-        alert("please enter in all fields silly :)");
+    //If any of the radio selections are still null, alert the user and do not proceed.
+    if (recipeTypeSelected == null && cuisineSelected == null && dietSelected == null && allergiesSelected.length == 0) {
+        alert("please select at least 1 option silly :)");
         return false;
     }
 
@@ -72,18 +62,10 @@ function recipeSearch() {
     apiURL += "&type=" + recipeTypeSelected;
     apiURL += "&number=4";  // limit to four recipes in the response
 
-    // If any allergies were selected, add an intolerances comma-separated list
+    // If any allergies were selected, add an intolerances comma-separated list as per API documentation direction
     if (allergiesSelected.length > 0) apiURL += "&intolerances=" + allergiesSelected.join(",");
 
     console.log(apiURL);
-
-    // Need to URL-encode the apiURL XXXXXXXXXXXXXXXXXXXXXXXX
-    // Some characters don't "send well" in a URL/URI, and need to be "enconded"
-    // Examples are spaces, &, etc.
-    // urlencoded changes problematic symbols to something else.
-    // Space becomes %20;
-    // & become &amp;
-
 
     // First fetch
     fetch(apiURL)  //  --> This ASYNC function RETURNS a PROMISE 
@@ -99,7 +81,7 @@ function recipeSearch() {
 
             // if no recipes are returned, then alert and leave on main page
             if (data.totalResults == 0) {
-                alert("No recipes were found that match the entries.");
+                alert("No matching recipes were found....");
                 return false;
             }
 
@@ -126,9 +108,6 @@ function recipeSearch() {
             document.getElementById("allReady").style.display = "none";
             document.getElementById("startOver").style.display = "block";
 
-
-
-
             // once we have the data WE UPDATE THE DOM   --> HTMLelemtent.textContent = data.dataWeWant;
         })
         .catch(error => {
@@ -149,51 +128,81 @@ function getCalories(mealName) {
 
     const options = {
         method: 'GET',
-        headers: {'X-API-Key': calKey}
+        headers: { 'X-API-Key': calKey }
     };
 
     fetch(calURL, options)  //  --> This ASYNC function RETURNS a PROMISE 
-    .then(function (response) {
-        console.log("Response Object: ", response);
-        return response.json();  // we are passing this DATA onto the following .then() callback
-    }) // returned request from API link
+        .then(function (response) {
+            console.log("Response Object: ", response);
+            return response.json();  // we are passing this DATA onto the following .then() callback
+        }) // returned request from API link
 
-    .then(data => {
-        console.log("Data: ", data);   // this DATA is already in JS format
-        let calories = 0;
-        // Loop through items.
-        for (let i of data) {
-            // Total calories for all.
-            calories += i.calories;
-        }
+        .then(data => {
+            console.log("Data: ", data);   // this DATA is already in JS format
+            let calories = 0;
+            // Loop through items.
+            for (let i of data) {
+                // Total calories for all.
+                calories += i.calories;
+            }
 
-        calories = Math.floor(calories);
-        // Display in an alert
-        alert(calories + " estimated calories.");
+            calories = Math.floor(calories);
+            // Display in an alert
+            alert(calories + " estimated calories.");
 
-    })
-    .catch(error => {
-        console.log("Error: ", error);
-    });
-    
+        })
+        .catch(error => {
+            console.log("Error: ", error);
+        });
+
 }
 
-//2nd API nutrientninja
-// key = lhYNdB5J4lLMfKvYfIWWkGCM5iBc1BBoLS5acv3u
+function getRecipeDetail(recipeID) {
 
-// const APInutkey = lhYNdB5J4lLMfKvYfIWWkGCM5iBc1BBoLS5acv3u
 
-// var nutquery = localStorage.getItem() //<---here we wanna grab data thats saved result on local so the 2nd api can read it not sure if we have to leave it as a string 
+    let apiURL = `https://api.spoonacular.com/recipes/${recipeID}/analyzedInstructions?apiKey=${APIKey}`;
 
-// const urlNut = "https://api.calorieninjas.com/v1/nutrition?query=" + nutquery// const url = 'https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/complexSearch?query=sandwich&cuisine=chinese&intolerances=lactose&includeIngredients=tomato%2Ccheese&fillIngredients=false&addRecipeInformation=false';
-// const options = {
-//     method: 'GET',
-//     headers: {
-//         'X-RapidAPI-Key': '0bc38f2652msh77a6f89cc849ed5p1e21afjsn855a2eae996d',
-//         'X-RapidAPI-Host': 'spoonacular-recipe-food-nutrition-v1.p.rapidapi.com'
-//     }
-// };
-// 
+    // Send the recipe ID to the spoonacular API. Use fetch.
+    fetch(apiURL)  //  --> This ASYNC function RETURNS a PROMISE 
+        .then(function (response) {
+            console.log("Response Object: ", response);
+            return response.json();
+        })
+        .then(data => {
+            console.log("Data: ", data);
+
+            // Parse the response to find the recipe/instructions detail.
+            let recipeDetails = "";
+            for (let e of data) {
+
+                for (let step of e.steps) {
+
+                    let step_text = step.step;
+                    //console.log(step.step);
+                    // Add the_text to a string.
+                    recipeDetails += step_text + "\n\n";
+
+                }
+
+            }
+
+            // Output the total string to an alert prompt or similar.
+            alert(recipeDetails);
+
+
+
+
+        })
+        .catch(error => {
+            console.log("Error: ", error);
+        });
+
+}
+
+
+
+
+
 
 
 
