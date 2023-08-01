@@ -129,31 +129,6 @@ button {
   align-items: center;
 }
 
-.asCheckbox {
-  /* appearance: none;
-  background-color: #fff;
-  margin: 0;
-  font: inherit;
-  color: currentColor;
-  width: 1em;
-  height: 1em;
-  border: 0.15em solid currentColor;
-  */
-
-  /* Need to add CSS to indicate checked/selected radio button XXXXXX */
-}
-
-.asCheckbox:checked::before{
-  /*
-  position: absolute;
-  color: green !important;
-  content: "\00A0\2713\00A0" !important;
-  border: 1px solid #d3d3d3;
-  font-weight: bolder;
-  font-size: 21px;
-  */
-}
-
 /* Formatting for results page */
 .container {
   display: grid;
