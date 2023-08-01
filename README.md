@@ -1,3 +1,0 @@
-# Quiet Diet 
-
-## User Story
