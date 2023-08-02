@@ -20,4 +20,5 @@ If an expansion of functionalities were desired in the future, the numerous API 
 
 
 ## Live Application
-***NEED TO ADD LINK TO DEPLOYED APPLICATION***
+
+https://mikewentforth.github.io/quiet-diet/
