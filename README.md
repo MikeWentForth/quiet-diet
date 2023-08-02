@@ -16,7 +16,8 @@ We leveraged Metro UI as the framework for this application. As a framework new 
 ## Growth Potential
 If an expansion of functionalities were desired in the future, the numerous API functionalities provided by Spoonacular would provide ample opportunities to expand the application's functions and allow for additional inputs to be implemented.
 
-## Screenshot of Live Application
+<img width="1134" alt="Screenshot 2023-08-02 at 4 06 44 PM" src="https://github.com/MikeWentForth/quiet-diet/assets/132107748/ffeedf6d-ed55-486d-89a9-1b3b81bfa5eb">
+
 
 ## Live Application
 ***NEED TO ADD LINK TO DEPLOYED APPLICATION***
