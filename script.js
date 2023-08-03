@@ -65,7 +65,6 @@ function recipeSearch() {
     // If any allergies were selected, add an intolerances comma-separated list as per API documentation direction
     if (allergiesSelected.length > 0) apiURL += "&intolerances=" + allergiesSelected.join(",");
 
-    console.log(apiURL);
 
     // First fetch
     fetch(apiURL)  //  --> This ASYNC function RETURNS a PROMISE 
@@ -75,7 +74,7 @@ function recipeSearch() {
         }) // returned request from API link
 
         .then(data => {
-            console.log("Data: ", data);   // this DATA is already in JS format
+              // this DATA is already in JS format
 
             // here we have to DIG INTO The RETURNED DATA OBJECT --> and pull out the INFOMATION WE WANT
 
@@ -111,7 +110,7 @@ function recipeSearch() {
             // once we have the data WE UPDATE THE DOM   --> HTMLelemtent.textContent = data.dataWeWant;
         })
         .catch(error => {
-            console.log("Error: ", error);
+           
         });
 
 }
@@ -133,12 +132,12 @@ function getCalories(mealName) {
 
     fetch(calURL, options)  //  --> This ASYNC function RETURNS a PROMISE 
         .then(function (response) {
-            console.log("Response Object: ", response);
+            
             return response.json();  // we are passing this DATA onto the following .then() callback
         }) // returned request from API link
 
         .then(data => {
-            console.log("Data: ", data);   // this DATA is already in JS format
+              // this DATA is already in JS format
             let calories = 0;
             // Loop through items.
             for (let i of data) {
@@ -152,7 +151,7 @@ function getCalories(mealName) {
 
         })
         .catch(error => {
-            console.log("Error: ", error);
+            
         });
 
 }
@@ -165,11 +164,11 @@ function getRecipeDetail(recipeID) {
     // Send the recipe ID to the spoonacular API. Use fetch.
     fetch(apiURL)  //  --> This ASYNC function RETURNS a PROMISE 
         .then(function (response) {
-            console.log("Response Object: ", response);
+           
             return response.json();
         })
         .then(data => {
-            console.log("Data: ", data);
+            
 
             // Parse the response to find the recipe/instructions detail.
             let recipeDetails = "";
@@ -194,7 +193,7 @@ function getRecipeDetail(recipeID) {
 
         })
         .catch(error => {
-            console.log("Error: ", error);
+           
         });
 
 }
